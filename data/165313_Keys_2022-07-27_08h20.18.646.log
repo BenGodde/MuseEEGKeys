@@ -1,0 +1,63 @@
+4.2792 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+8.7665 	INFO 	Loaded monitor calibration from ['2022_01_18 13:13']
+8.7730 	WARNING 	User requested fullscreen with size [1280  800], but screen is actually [3840, 2400]. Using actual size
+11.9425 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000282BC5A0D90>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000282C015B4F0>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=0, size=array([3840, 2400]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+11.9426 	EXP 	window1: mouseVisible = True
+11.9428 	EXP 	window1: mouseVisible = False
+11.9428 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+11.9428 	EXP 	window1: recordFrameIntervals = False
+12.1088 	EXP 	window1: recordFrameIntervals = True
+12.2921 	EXP 	Screen (0) actual frame rate measured at 60.12Hz
+12.2921 	EXP 	window1: recordFrameIntervals = False
+14.2716 	INFO 	keyboard.Keyboard is using iohub backend.
+14.3027 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.3047 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.3070 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.3098 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.3101 	DEBUG 	Uploading Texture Font fontname to graphics card
+14.3187 	DEBUG 	Upload of Texture Font fontname complete
+14.3193 	EXP 	window1: mouseVisible = True
+14.3475 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.3495 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.3515 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.3537 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.3558 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.3560 	DEBUG 	Uploading Texture Font fontname to graphics card
+14.3567 	DEBUG 	Upload of Texture Font fontname complete
+14.3572 	EXP 	window1: mouseVisible = True
+14.3818 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.3837 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.3863 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.3865 	DEBUG 	Uploading Texture Font fontname to graphics card
+14.3870 	DEBUG 	Upload of Texture Font fontname complete
+14.3874 	EXP 	window1: mouseVisible = True
+14.4128 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.4130 	DEBUG 	Uploading Texture Font fontname to graphics card
+14.4189 	DEBUG 	Upload of Texture Font fontname complete
+14.4193 	EXP 	window1: mouseVisible = True
+14.4479 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.4500 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.4502 	DEBUG 	Uploading Texture Font fontname to graphics card
+14.4574 	DEBUG 	Upload of Texture Font fontname complete
+14.4578 	EXP 	window1: mouseVisible = True
+14.4859 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.4889 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.4891 	DEBUG 	Uploading Texture Font fontname to graphics card
+14.4944 	DEBUG 	Upload of Texture Font fontname complete
+14.4948 	EXP 	window1: mouseVisible = True
+14.4954 	EXP 	Created sequence: sequential, trialTypes=1, nReps=40, seed=None
+14.4956 	EXP 	New trial (rep=0, index=0): None
+15.8779 	DATA 	Mouse: Left button down, pos=(1979,2310)
+16.1114 	DATA 	Mouse:  Left button up, pos=(1979,2310)
+16.9771 	DATA 	Mouse: Left button down, pos=(1807,1939)
+17.1993 	DATA 	Mouse:  Left button up, pos=(1807,1939)
+17.9612 	DATA 	Mouse: Left button down, pos=(1742,1589)
+18.1937 	DATA 	Mouse:  Left button up, pos=(1742,1589)
+18.8773 	DATA 	Mouse: Left button down, pos=(1671,1104)
+18.8799 	EXP 	New trial (rep=1, index=0): None
+19.0935 	DATA 	Mouse:  Left button up, pos=(1671,1104)
+19.8608 	DATA 	Mouse: Left button down, pos=(1740,377)
+21.3027 	EXP 	window1: mouseVisible = True
+21.3028 	DEBUG 	Saving data for Keys ExperimentHandler
+21.3057 	INFO 	saved data to C:\Users\bgodde\OneDrive - Jacobs University\Documents\Psychopy\MuseEEGMarkers\data/165313_Keys_2022-07-27_08h20.18.646.psydat
+21.3084 	INFO 	saved data to 'C:\\Users\\bgodde\\OneDrive - Jacobs University\\Documents\\Psychopy\\MuseEEGMarkers\\data/165313_Keys_2022-07-27_08h20.18.646.csv'
