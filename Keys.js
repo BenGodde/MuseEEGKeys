@@ -19,10 +19,6 @@ let expInfo = {
 };
 
 // Start code blocks for 'Before Experiment'
-// Run 'Before Experiment' code from code
-import * as time from 'time';
-import {datetime} from 'datetime';
-
 // init psychoJS:
 const psychoJS = new PsychoJS({
   debug: true
@@ -31,8 +27,8 @@ const psychoJS = new PsychoJS({
 // open window:
 psychoJS.openWindow({
   fullscr: true,
-  color: new util.Color([0,0,0]),
-  units: 'height',
+  color: new util.Color([(- 1.0), (- 1.0), (- 1.0)]),
+  units: 'norm',
   waitBlanking: true
 });
 // schedule the experiment:
@@ -48,9 +44,6 @@ psychoJS.scheduleCondition(function() { return (psychoJS.gui.dialogComponent.but
 // flowScheduler gets run if the participants presses OK
 flowScheduler.add(updateInfo); // add timeStamp
 flowScheduler.add(experimentInit);
-flowScheduler.add(addCodeRoutineBegin());
-flowScheduler.add(addCodeRoutineEachFrame());
-flowScheduler.add(addCodeRoutineEnd());
 const tr_loopLoopScheduler = new Scheduler(psychoJS);
 flowScheduler.add(tr_loopLoopBegin(tr_loopLoopScheduler));
 flowScheduler.add(tr_loopLoopScheduler);
@@ -95,7 +88,6 @@ async function updateInfo() {
 }
 
 
-var addCodeClock;
 var EEGtrialClock;
 var Prep;
 var Stance;
@@ -106,8 +98,6 @@ var End;
 var globalClock;
 var routineTimer;
 async function experimentInit() {
-  // Initialize components for Routine "addCode"
-  addCodeClock = new util.Clock();
   // Initialize components for Routine "EEGtrial"
   EEGtrialClock = new util.Clock();
   Prep = new visual.ButtonStim({
@@ -118,9 +108,9 @@ async function experimentInit() {
     borderColor: [(- 1.0), (- 1.0), (- 1.0)],
     color: 'black',
     colorSpace: 'rgb',
-    pos: [0, 0.9],
+    pos: [0, 0.6],
     letterHeight: 0.05,
-    size: [1, 0.15]
+    size: [1, 0.1]
   });
   Prep.clock = new util.Clock();
   
@@ -132,9 +122,9 @@ async function experimentInit() {
     borderColor: 'black',
     color: 'black',
     colorSpace: 'rgb',
-    pos: [0, 0.6],
+    pos: [0, 0.4],
     letterHeight: 0.05,
-    size: [1, 0.15]
+    size: [1, 0.1]
   });
   Stance.clock = new util.Clock();
   
@@ -146,9 +136,9 @@ async function experimentInit() {
     borderColor: 'black',
     color: 'black',
     colorSpace: 'rgb',
-    pos: [0, 0.3],
+    pos: [0, 0.2],
     letterHeight: 0.05,
-    size: [1, 0.15]
+    size: [1, 0.1]
   });
   Swing.clock = new util.Clock();
   
@@ -162,7 +152,7 @@ async function experimentInit() {
     colorSpace: 'rgb',
     pos: [0, (- 0.1)],
     letterHeight: 0.05,
-    size: [1, 0.15]
+    size: [1, 0.1]
   });
   Hit.clock = new util.Clock();
   
@@ -174,9 +164,9 @@ async function experimentInit() {
     borderColor: 'red',
     color: 'white',
     colorSpace: 'rgb',
-    pos: [0, (- 0.4)],
+    pos: [0, (- 0.3)],
     letterHeight: 0.05,
-    size: [1, 0.15]
+    size: [1, 0.1]
   });
   Miss.clock = new util.Clock();
   
@@ -184,13 +174,13 @@ async function experimentInit() {
     win: psychoJS.window,
     name: 'End',
     text: 'End',
-    fillColor: 'black',
+    fillColor: [0.0039, 0.0039, 0.0039],
     borderColor: 'black',
     color: 'white',
     colorSpace: 'rgb',
-    pos: [0, (- 0.7)],
+    pos: [0, (- 0.5)],
     letterHeight: 0.05,
-    size: [1, 0.15]
+    size: [1, 0.1]
   });
   End.clock = new util.Clock();
   
@@ -199,85 +189,6 @@ async function experimentInit() {
   routineTimer = new util.CountdownTimer();  // to track time remaining of each (non-slip) routine
   
   return Scheduler.Event.NEXT;
-}
-
-
-var t;
-var frameN;
-var continueRoutine;
-var addCodeComponents;
-function addCodeRoutineBegin(snapshot) {
-  return async function () {
-    TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
-    
-    //--- Prepare to start Routine 'addCode' ---
-    t = 0;
-    addCodeClock.reset(); // clock
-    frameN = -1;
-    continueRoutine = true; // until we're told otherwise
-    // update component parameters for each repeat
-    // keep track of which components have finished
-    addCodeComponents = [];
-    
-    for (const thisComponent of addCodeComponents)
-      if ('status' in thisComponent)
-        thisComponent.status = PsychoJS.Status.NOT_STARTED;
-    return Scheduler.Event.NEXT;
-  }
-}
-
-
-function addCodeRoutineEachFrame() {
-  return async function () {
-    //--- Loop for each frame of Routine 'addCode' ---
-    // get current time
-    t = addCodeClock.getTime();
-    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
-    // update/draw components on each frame
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
-    // check if the Routine should terminate
-    if (!continueRoutine) {  // a component has requested a forced-end of Routine
-      return Scheduler.Event.NEXT;
-    }
-    
-    continueRoutine = false;  // reverts to True if at least one component still running
-    for (const thisComponent of addCodeComponents)
-      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
-        continueRoutine = true;
-        break;
-      }
-    
-    // refresh the screen if continuing
-    if (continueRoutine) {
-      return Scheduler.Event.FLIP_REPEAT;
-    } else {
-      return Scheduler.Event.NEXT;
-    }
-  };
-}
-
-
-function addCodeRoutineEnd(snapshot) {
-  return async function () {
-    //--- Ending Routine 'addCode' ---
-    for (const thisComponent of addCodeComponents) {
-      if (typeof thisComponent.setAutoDraw === 'function') {
-        thisComponent.setAutoDraw(false);
-      }
-    }
-    // the Routine "addCode" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset();
-    
-    // Routines running outside a loop should always advance the datafile row
-    if (currentLoop === psychoJS.experiment) {
-      psychoJS.experiment.nextEntry(snapshot);
-    }
-    return Scheduler.Event.NEXT;
-  }
 }
 
 
@@ -344,6 +255,9 @@ function tr_loopLoopEndIteration(scheduler, snapshot) {
 }
 
 
+var t;
+var frameN;
+var continueRoutine;
 var EEGtrialComponents;
 function EEGtrialRoutineBegin(snapshot) {
   return async function () {

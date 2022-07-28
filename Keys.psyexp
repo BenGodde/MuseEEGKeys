@@ -23,11 +23,11 @@
     <Param val="1" valType="num" updates="None" name="Screen"/>
     <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
     <Param val="False" valType="bool" updates="None" name="Show mouse"/>
-    <Param val="height" valType="str" updates="None" name="Units"/>
+    <Param val="norm" valType="str" updates="None" name="Units"/>
     <Param val="" valType="str" updates="None" name="Use version"/>
     <Param val="[1280, 800]" valType="list" updates="None" name="Window size (pixels)"/>
     <Param val="avg" valType="str" updates="None" name="blendMode"/>
-    <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+    <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="None" name="color"/>
     <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
     <Param val="100.1.1.1" valType="str" updates="None" name="elAddress"/>
     <Param val="FILTER_LEVEL_2" valType="str" updates="None" name="elDataFiltering"/>
@@ -85,10 +85,10 @@
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="" valType="num" updates="constant" name="padding"/>
-        <Param val="(0, 0.9)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, 0.6)" valType="list" updates="constant" name="pos"/>
         <Param val="every click" valType="str" updates="None" name="save"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1,0.15]" valType="list" updates="constant" name="size"/>
+        <Param val="[1,0.1]" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0" valType="code" updates="None" name="startVal"/>
@@ -120,10 +120,10 @@
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="" valType="num" updates="constant" name="padding"/>
-        <Param val="(0, 0.6)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, 0.4)" valType="list" updates="constant" name="pos"/>
         <Param val="every click" valType="str" updates="None" name="save"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1,0.15]" valType="list" updates="constant" name="size"/>
+        <Param val="[1,0.1]" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0" valType="code" updates="None" name="startVal"/>
@@ -155,10 +155,10 @@
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="" valType="num" updates="constant" name="padding"/>
-        <Param val="(0,0.3)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0,0.2)" valType="list" updates="constant" name="pos"/>
         <Param val="every click" valType="str" updates="None" name="save"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1,0.15]" valType="list" updates="constant" name="size"/>
+        <Param val="[1,0.1]" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0" valType="code" updates="None" name="startVal"/>
@@ -193,7 +193,7 @@
         <Param val="(0, -0.1)" valType="list" updates="constant" name="pos"/>
         <Param val="every click" valType="str" updates="None" name="save"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1,0.15]" valType="list" updates="constant" name="size"/>
+        <Param val="[1,0.1]" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0" valType="code" updates="None" name="startVal"/>
@@ -225,10 +225,10 @@
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="" valType="num" updates="constant" name="padding"/>
-        <Param val="(0, -0.4)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, -0.3)" valType="list" updates="constant" name="pos"/>
         <Param val="every click" valType="str" updates="None" name="save"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1,0.15]" valType="list" updates="constant" name="size"/>
+        <Param val="[1,0.1]" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0" valType="code" updates="None" name="startVal"/>
@@ -250,7 +250,7 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="black" valType="color" updates="constant" name="fillColor"/>
+        <Param val="0.0039, 0.0039, 0.0039" valType="color" updates="constant" name="fillColor"/>
         <Param val="Arvo" valType="str" updates="constant" name="font"/>
         <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
@@ -260,10 +260,10 @@
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="" valType="num" updates="constant" name="padding"/>
-        <Param val="(0,-0.7)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0,-0.5)" valType="list" updates="constant" name="pos"/>
         <Param val="every click" valType="str" updates="None" name="save"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="[1,0.15]" valType="list" updates="constant" name="size"/>
+        <Param val="[1,0.1]" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0" valType="code" updates="None" name="startVal"/>
@@ -296,7 +296,6 @@
     </Routine>
   </Routines>
   <Flow>
-    <Routine name="addCode"/>
     <LoopInitiator loopType="TrialHandler" name="tr_loop">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>

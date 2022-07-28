@@ -1,8 +1,8 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.2),
-    on Juli 27, 2022, at 08:54
+    on Juli 28, 2022, at 10:46
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -27,10 +27,6 @@ import sys  # to get file system encoding
 
 import psychopy.iohub as io
 from psychopy.hardware import keyboard
-
-# Run 'Before Experiment' code from code
-import time
-from datetime import datetime
 
 
 
@@ -74,9 +70,9 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 win = visual.Window(
     size=[1280, 800], fullscr=True, screen=0, 
     winType='pyglet', allowStencil=False,
-    monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
+    monitor='testMonitor', color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
-    units='height')
+    units='norm')
 win.mouseVisible = False
 # store frame rate of monitor if we can measure it
 expInfo['frameRate'] = win.getActualFrameRate()
@@ -99,14 +95,12 @@ eyetracker = None
 # create a default keyboard (e.g. to check for escape)
 defaultKeyboard = keyboard.Keyboard(backend='iohub')
 
-# --- Initialize components for Routine "addCode" ---
-
 # --- Initialize components for Routine "EEGtrial" ---
 Prep = visual.ButtonStim(win, 
     text='Prep', font='Arvo',
-    pos=(0, 0.9),units='norm',
+    pos=(0, 0.6),units='norm',
     letterHeight=0.05,
-    size=[1,0.15], borderWidth=0.0,
+    size=[1,0.1], borderWidth=0.0,
     fillColor='white', borderColor=[-1.0000, -1.0000, -1.0000],
     color='black', colorSpace='rgb',
     opacity=None,
@@ -118,9 +112,9 @@ Prep = visual.ButtonStim(win,
 Prep.buttonClock = core.Clock()
 Stance = visual.ButtonStim(win, 
     text='Stance', font='Arvo',
-    pos=(0, 0.6),units='norm',
+    pos=(0, 0.4),units='norm',
     letterHeight=0.05,
-    size=[1,0.15], borderWidth=0.0,
+    size=[1,0.1], borderWidth=0.0,
     fillColor='white', borderColor='black',
     color='black', colorSpace='rgb',
     opacity=None,
@@ -132,9 +126,9 @@ Stance = visual.ButtonStim(win,
 Stance.buttonClock = core.Clock()
 Swing = visual.ButtonStim(win, 
     text='Swing', font='Arvo',
-    pos=(0,0.3),units='norm',
+    pos=(0,0.2),units='norm',
     letterHeight=0.05,
-    size=[1,0.15], borderWidth=0.0,
+    size=[1,0.1], borderWidth=0.0,
     fillColor='white', borderColor='black',
     color='black', colorSpace='rgb',
     opacity=None,
@@ -148,7 +142,7 @@ Hit = visual.ButtonStim(win,
     text='Hit', font='Arvo',
     pos=(0, -0.1),units='norm',
     letterHeight=0.05,
-    size=[1,0.15], borderWidth=0.0,
+    size=[1,0.1], borderWidth=0.0,
     fillColor='green', borderColor='green',
     color='white', colorSpace='rgb',
     opacity=None,
@@ -160,9 +154,9 @@ Hit = visual.ButtonStim(win,
 Hit.buttonClock = core.Clock()
 Miss = visual.ButtonStim(win, 
     text='Miss', font='Arvo',
-    pos=(0, -0.4),units='norm',
+    pos=(0, -0.3),units='norm',
     letterHeight=0.05,
-    size=[1,0.15], borderWidth=0.0,
+    size=[1,0.1], borderWidth=0.0,
     fillColor='red', borderColor='red',
     color='white', colorSpace='rgb',
     opacity=None,
@@ -174,10 +168,10 @@ Miss = visual.ButtonStim(win,
 Miss.buttonClock = core.Clock()
 End = visual.ButtonStim(win, 
     text='End', font='Arvo',
-    pos=(0,-0.7),units='norm',
+    pos=(0,-0.5),units='norm',
     letterHeight=0.05,
-    size=[1,0.15], borderWidth=0.0,
-    fillColor='black', borderColor='black',
+    size=[1,0.1], borderWidth=0.0,
+    fillColor=[0.0039, 0.0039, 0.0039], borderColor='black',
     color='white', colorSpace='rgb',
     opacity=None,
     bold=True, italic=False,
@@ -190,58 +184,6 @@ End.buttonClock = core.Clock()
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
 routineTimer = core.Clock()  # to track time remaining of each (possibly non-slip) routine 
-
-# --- Prepare to start Routine "addCode" ---
-continueRoutine = True
-routineForceEnded = False
-# update component parameters for each repeat
-# keep track of which components have finished
-addCodeComponents = []
-for thisComponent in addCodeComponents:
-    thisComponent.tStart = None
-    thisComponent.tStop = None
-    thisComponent.tStartRefresh = None
-    thisComponent.tStopRefresh = None
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-# reset timers
-t = 0
-_timeToFirstFrame = win.getFutureFlipTime(clock="now")
-frameN = -1
-
-# --- Run Routine "addCode" ---
-while continueRoutine:
-    # get current time
-    t = routineTimer.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        routineForceEnded = True
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in addCodeComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# --- Ending Routine "addCode" ---
-for thisComponent in addCodeComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-# the Routine "addCode" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
 tr_loop = data.TrialHandler(nReps=40.0, method='sequential', 
